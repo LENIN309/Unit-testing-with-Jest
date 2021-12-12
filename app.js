@@ -6,11 +6,6 @@ const fromEuroToDollar = function(valueInEuro){
    return valueInDollar;
 }
 
-module.exports = {  fromEuroToDollar }
-
-
-
-
 // declaramos una funcion con el mismo nombre "fromDollarToYen"
 const fromDollarToYen = function(valueInDolar){
     // convertimos el valor a Yen
@@ -18,9 +13,6 @@ const fromDollarToYen = function(valueInDolar){
     // retornamos el valor
     return valueInYen;
 }
-
-module.exports = {  fromDollarToYen }
-
 
 
 // declaramos una funcion con el mismo nombre "fromYenToPound"
@@ -31,7 +23,7 @@ const fromYenToPound = function(valueInYen){
      return valueInPound;
 }
 
-module.exports = {  fromYenToPound }
+module.exports = {  fromYenToPound,  fromDollarToYen, fromEuroToDollar }
 
 
 

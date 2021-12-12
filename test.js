@@ -1,5 +1,5 @@
 // importo la funcion desde app.js
-const { fromEuroToDollar } = require('./app.js')
+const { fromEuroToDollar, fromDollarToYen, fromYenToPound } = require('./app.js')
 
 test("One euro should be 1.2 dollars", function(){
 
@@ -11,11 +11,6 @@ expect(dollars).toBe(4.2); //1 euro son 1.2 dolares, entonces 3.5 euros deberian
 
 
 
-
-
-// importo la funcion desde app.js
-const { fromDollarToYen } = require('./app.js')
-
 test("One dollar should be 127.9 Yen", function(){
 
     let yen = fromDollarToYen(2, 127.9);
@@ -26,7 +21,6 @@ expect(yen).toBe(255.8); //1 Dolar son 127.9 Yen,  entonces 2 dolares deberian s
 
 
 
-const { fromYenToPound } = require('./app.js')
 
 test("One yen should be 0.8 pound", function(){
 
